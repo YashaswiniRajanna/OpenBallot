@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            option{
+                background-color: lightgray;
+                color:blue;
+                font-size: large;
+            }
+        </style>
+        <title>Rating panel</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body style="background-color: lightblue; align-items: center;">
+        <h1 style="font-weight: bold;">Welcome to Rating Section for the your local area CONSTITUENCY </h1>
+        <select id="list" onchange="getSelectValue();">
+            <option value="banglore urbun">Banglore urban</option>
+            <option value="banglore rural">banglore rural</option>
+            <option value="Chikkaballapur">Chikkaballapur</option>
+            <option value="Shimogga">Shimogga</option>
+            <option value="Hassan">Hassan</option>
+            <option value="Tumkur">Tumkur</option>
+            <option value="Dakshina kannada">Dakshina kannada</option>
+            <option value="Uttara kannada">Uttara kannada</option>
+            <option value="Ramanagar">Ramanagar</option>
+            <option value="Mysore">Mysore</option>
+            <option value="Kodagu">Kodagu</option>
+            <option value="Chikkamagaluru">Chikkamagaluru</option>
+            <option value="idar">Bidar</option>
+            <option value="Gulburga">Gulburga</option>
+            <option value="Belagavi">Belagavi</option>
+            <option value="Bagalkot">Bagalkot</option>
+            <option value="Bellary">Bellary</option>
+            <option value="Vijayapur">Vijayapur</option>
+            <option value="Chamarajnagar">Chamarajnagars</option>
+            <option value="Chitradurga">Chitradurga</option>
+            <option value="Davanagere">Davanagere</option>
+            <option value="Udupi">Udupi</option>
+            <option value="Gadag">Gadag</option>
+            <option value="Hubballi">Hubballi</option>
+            <option value="Kolar">Kolar</option>
+            <option value="Mandya">Mandya</option>
+            <option value="Raichur">Raichur</option>
+            <option value="Yadagiri">Yadagiri</option>
+            </select>
+            <div style="align-items: center;">
+                <a    href="rating.html">RATE CONSTITUENCY</a>
+            </div>
+            
+    <script>
+        
+        function getSelectValue()
+        {
+            var selectedValue = document.getElementById("list").value;
+            console.log(selectedValue);
+        }
+        getSelectValue();
+
+    </script>
+    </body>
+</html>
